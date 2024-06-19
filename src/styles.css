@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: #edf1f5;
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    color: #fff;
+    background: #4b5366;
+    padding: 16px 30px;
+    margin: -20px -20px 10px;
+    border-radius: 3px 3px 0 0;
+}
+
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+
+.table-title .btn-group {
+    float: right;
+}
+
+.table-title .btn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    border: none;
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+}
+
+.table-title .btn i {
+    float: left;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.table-title .btn span {
+    float: left;
+    margin-top: 2px;
+}
+
+.table-title .btn.btn-success {
+    background: #5cb85c;
+}
+
+.table-title .btn.btn-primary {
+    background: #0275d8;
+}
+
+.table-title .btn.btn-info {
+    background: #5bc0de;
+}
+
+.table-title .btn.btn-danger {
+    background: #d9534f;
+}
+
+.table {
+    margin: 30px 0;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+.table th:first-child {
+    width: 60px;
+}
+
+.table th:last-child {
+    width: 100px;
+}
+
+.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.table td a:hover {
+    color: #2196F3;
+}
+
+.table td a.settings {
+    color: #2196F3;
+}
+
+.table td a.delete {
+    color: #F44336;
+}
+
+.table td i {
+    font-size: 19px;
+}
+
+.table td .badge {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-success {
+    background-color: #5cb85c;
+}
+
+.badge-danger {
+    background-color: #d9534f;
+}
