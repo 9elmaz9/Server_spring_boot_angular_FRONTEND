@@ -35,21 +35,7 @@ export class AppComponent implements OnInit {
   //private readonly notifier: NotifierService;
  
   constructor(private serverService: ServerService, private notifier: NotificationService) {}
- 
-//       map(response => ({ dataSubject: response,dataState: DataState.LOADED_STATE, appData: response,
-//       servers: response.data.servers.reverse(),error: null
-//       }) as AppState<CustomResponse>),
-//       startWith({
-//         dataState: DataState.LOADING_STATE, appData: null,error: null
-//       } as AppState<CustomResponse>),
-//       catchError((error: string) =>
-//         of({
-//           dataState: DataState.ERROR_STATE,appData: null, error: error
-//         } as AppState<CustomResponse>)
-//       )
-//     );
-// }
-//
+
 
   ngOnInit(): void {
     this.appState$ = this.serverService.servers$
