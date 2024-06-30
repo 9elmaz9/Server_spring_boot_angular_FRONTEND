@@ -56,7 +56,6 @@ export class AppComponent implements OnInit {
   }
  
 
-
 pingServer(ipAddress: string): void {
   this.filterSubject.next(ipAddress);
   this.appState$ = this.serverService.ping$(ipAddress)
@@ -81,13 +80,6 @@ pingServer(ipAddress: string): void {
   );
 }
   
-
-
-
-
-
-
-
 saveServer(serverForm: NgForm): void {
   this.isLoading.next(true);
   this.appState$ = this.serverService.save$(serverForm.value as Server)
@@ -133,39 +125,7 @@ filterServers(status: Status): void {
 })
     );
 }
- //deleteServer(server: Server): void {
- //  this.appState$ = this.serverService.delete$(server.id)
- //    .pipe(
- //      map(response => {
- //        const updatedServers = this.dataSubject.value.appData.data.servers.filter(s => s.id !== server.id);
- //
- //        return {
- //          dataState: DataState.LOADED_STATE,
- //          appData: {
- //            ...this.dataSubject.value.appData,
- //            data: {
- //              ...this.dataSubject.value.appData.data,
- //              servers: updatedServers
- //            }
- //          },
- //          error: null
- //        } as AppState<CustomResponse>;
- //      }),
- //      startWith({
- //        dataState: DataState.LOADING_STATE,
- //        appData: this.dataSubject.value.appData,
- //        error: null
- //      } as AppState<CustomResponse>),
- //      catchError((error: string) =>
- //        of({
- //          dataState: DataState.ERROR_STATE,
- //          appData: null,
- //          error: error
- //        } as AppState<CustomResponse>)
- //      )
- //    );
- //}
- //
+
 
  deleteServer(server: Server): void {
    this.appState$ = this.serverService.delete$(server.id)
