@@ -86,35 +86,7 @@ pingServer(ipAddress: string): void {
 
 
 
-//saveServer(serverForm: NgForm): void {
-//  this.isLoading.next(true);
-//  this.appState$ = this.serverService.save$(serverForm.value as Server)
-//    .pipe(
-//      map(response => {
-//        const updatedServers = [response.data.server, ...this.dataSubject.value.appData.data.servers];
-//        this.dataSubject.next({ ...this.dataSubject.value, appData: {...this.dataSubject.value.appData,
-//            data: { ...this.dataSubject.value.appData.data, servers: updatedServers }
-//          }
-//        });
-//        document.getElementById('closeModal').click();
-//        this.isLoading.next(false);
-//        serverForm.resetForm({ status: this.Status.SERVER_DOWN });
-//
-//        return {
-//          dataState: DataState.LOADED_STATE, appData: this.dataSubject.value.appData,} as AppState<CustomResponse>;
-//      }),
-//      startWith({
-//        dataState: DataState.LOADING_STATE, appData: this.dataSubject.value.appData, error: null
-//      } as AppState<CustomResponse>),
-//      catchError((error: string) => {
-//        this.isLoading.next(false);
-//        return of({
-//          dataState: DataState.ERROR_STATE,appData: null, error: error
-//        } as AppState<CustomResponse>);
-//      })
-//    );
-//}
-//
+
 
 saveServer(serverForm: NgForm): void {
   this.isLoading.next(true);
