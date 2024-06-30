@@ -55,29 +55,6 @@ export class AppComponent implements OnInit {
       );
   }
  
-//pingServer(ipAddress: string): void {
-//  this.filterSubject.next(ipAddress);
-//  this.appState$ = this.serverService.ping$(ipAddress)
-//  .pipe(
-//    map(response => {
-//      const serverIndex = this.dataSubject.value.appData.data.servers.findIndex(
-//        server => server.id === response.data.server.id );
-//      const updatedServers = [...this.dataSubject.value.appData.data.servers];
-//      updatedServers[serverIndex] = response.data.server;
-//
-//      this.filterSubject.next('');
-//
-//      return {
-//        dataState: DataState.LOADED_STATE, appData: { ...this.dataSubject.value.appData,  data: {...this.dataSubject.value.appData.data,
-//        servers: updatedServers } }, error: null } as AppState<CustomResponse>;
-//    }),
-//    startWith({dataState: DataState.LOADING_STATE,appData: this.dataSubject.value.appData, error: null} as AppState<CustomResponse>),
-//    
-//    catchError((error: string) =>
-//      of({ dataState: DataState.ERROR_STATE,appData: null, error: error} as AppState<CustomResponse>) ) );
-//}
-//
-
 
 
 pingServer(ipAddress: string): void {
