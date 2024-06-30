@@ -83,28 +83,7 @@ pingServer(ipAddress: string): void {
   
 
 
-// filterServers(status: Status): void {
-//   this.appState$ = this.serverService.filter$(status, this.dataSubject.value)
-//     .pipe(
-//       map(response => {
-//         return { dataState: DataState.LOADED_STATE,
-//           appData: {...this.dataSubject.value.appData, data: { ...this.dataSubject.value.appData.data, }
-//           },
-//           error: null
-//         } as AppState<CustomResponse>;  }),
-//
-//       startWith({
-//         dataState: DataState.LOADING_STATE,appData: this.dataSubject.value.appData, error: null
-//       } as AppState<CustomResponse>),
-//
-//       catchError((error: string) =>
-//         of({
-//           dataState: DataState.ERROR_STATE, appData: null, error: error
-//         } as AppState<CustomResponse>)
-//       )
-//     );
-// }
-//
+
 
 
 //saveServer(serverForm: NgForm): void {
