@@ -1,5 +1,7 @@
 # ServerApp
 
+![Project Screenshot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsEaDUbm-9Fn_f1AOKG7MGLkmvk1ShlMn5PywHxFty6y2BPhtUJOgXF3PIlTbj1N6Mh_M&usqp=CAU)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
 ## Development server
